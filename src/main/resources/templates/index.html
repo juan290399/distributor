@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/api/clients" method="post">
+        <input type="text" name="cliNames" placeholder="Nombres" required>
+        <input type="text" name="cliLastNames" placeholder="Apellidos" required>
+        <input type="text" name="cliDni" placeholder="DNI (8 dígitos)" required>
+        <input type="text" name="cliCellphone" placeholder="Celular (9 dígitos)">
+        <input type="text" name="cliWhatsapp" placeholder="WhatsApp (9 dígitos)">
+        <input type="email" name="cliEmail" placeholder="Email">
+        <button type="submit">Crear Cliente</button>
+    </form>
+
+    <form action="/api/retailers" method="post">
+        <input type="text" name="retName" placeholder="Nombre del Retailer" required>
+        <input type="text" name="retType" placeholder="Tipo" required>
+        <input type="text" name="retRuc" placeholder="RUC (11 dígitos)" required>
+        <label>
+            Activo:
+            <input type="checkbox" name="retActive" value="true" checked>
+        </label>
+        <button type="submit">Crear Retailer</button>
+    </form>
+
+</body>
+</html>
