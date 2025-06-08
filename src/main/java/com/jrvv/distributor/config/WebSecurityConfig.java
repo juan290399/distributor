@@ -12,7 +12,8 @@ import org.springframework.security.web.*;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.config.http.SessionCreationPolicy;
-// Cambios diferentes en la configuración de seguridad para usar JWT
+// Cambios realizados en la rama testing
+
 @Configuration
 @EnableWebSecurity
 @RequiredArgsConstructor
