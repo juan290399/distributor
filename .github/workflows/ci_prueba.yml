@@ -28,15 +28,9 @@ jobs:
       - name: Dar permisos a Gradle Wrapper
         run: chmod +x ./gradlew
 
-      - name: Compilar la aplicación
+      - name: Compilar la aplicación (sin test)
         run: ./gradlew build -x test
 
       - name: Ejecutar pruebas
         run: ./gradlew test
 
-
-      - name: Compilar la aplicación
-        run: mvn clean install -DskipTests
-
-      - name: Ejecutar pruebas
-        run: mvn test
